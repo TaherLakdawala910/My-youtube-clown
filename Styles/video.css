@@ -1,0 +1,153 @@
+@media (max-width:1000px){
+  .title{
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .author,.views{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:1000px){
+  .title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .author, .views{
+    font-size: 14px;
+  }
+}
+
+
+.thumbnail{
+  width: 100%;
+}
+
+.cpdiv{
+  width: 40px;
+  height: 45px;
+  position: relative;
+}
+
+.cp{
+  width: 36px;
+  border-radius: 20px;
+}
+
+.textdiv{
+  width: 100%;
+}
+
+.title{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.author{
+  color: rgb(96, 96, 96);
+  margin-bottom: 4px;
+}
+
+.views{
+  color: rgb(96, 96, 96);
+}
+
+.cptext{
+  display: grid;
+  grid-template-columns: 48px 1fr;
+
+}
+
+.videogrid{
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width:750px){
+  .videogrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:751px) and (max-width:999px){
+  .videogrid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1000px){
+  .videogrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-time{
+  position: absolute;
+  bottom: 10px;
+  right: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.video-title-link{
+  text-decoration: none;
+  color: black;
+}
+
+.video-author-link{
+  text-decoration: none;
+  color: black;
+}
+
+.thumbnail-div{
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.cpdiv .tooltip{
+  display: flex;
+  z-index: 100;
+  background-color: white;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 60px;
+  position: absolute;
+  bottom: -68px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.cpdiv:hover .tooltip{
+  opacity: 1;
+}
+
+.cp-tooltip{
+  width: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.channel-name{
+  font-weight: bold;
+}
+
+.subs{
+  font-size: 14px;
+  color: gray;
+}
+
